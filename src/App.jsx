@@ -16,11 +16,11 @@ function App() {
         setFact(fact);
       });
   }, []);
-  
+
   return (
     <main>
       <h1>Cats App</h1>
-      {fact}
+      {fact && <p>{fact}</p>}
     </main>
   );
 }
